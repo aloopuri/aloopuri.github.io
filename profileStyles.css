@@ -15,6 +15,8 @@ p, h3 {
     background-color: blueviolet;
     color: beige;
     width: 50vw;
+    min-width: 200px;
+    border: 2px solid darkmagenta
 }
 
 /* class selectors */
@@ -26,8 +28,9 @@ p, h3 {
 /* wildcard selectors */
 * {
     /* for everything  */
-    /* margin: 0px;
-    padding: 0px; */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 body {
@@ -36,6 +39,12 @@ body {
 
     font-family: "Comic Sans MS", "Times New Roman", Impact, cursive;
     font-size: 1rem;
+
+    /* how to add a background */
+    /* background-image:url("https://www.pngmart.com/files/7/Abstract-Wave-PNG-Transparent.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
 }
 
 h1 {
@@ -44,10 +53,17 @@ h1 {
 
 .box-1 {
     background-color: rgba(255, 255, 255, 0.2);
+    
+    margin-top: 5px;
+    margin-left: 1rem;
+    margin-right: 0px;
+    margin-bottom: 5px;
 }
 
 .box-2 {
     background-color: rgba(0, 0, 0, 0.2);
+
+    margin: 5px 2rem;
 }
 
 .container {
@@ -72,4 +88,44 @@ just an example for any image on this html page */
 .flexbox-center-img {
     display: flex;
     justify-content: center;
+}
+
+/* footer h4 - descendant */
+footer>h4 /* child */ {
+    font-weight: bolder;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+label[for = "search"] {
+    text-transform: uppercase;
+}
+
+#search:focus {
+    outline: limegreen 4px solid;
+}
+
+a:visited {
+    color: initial;
+}
+
+a:hover {
+    cursor: crosshair;
+}
+
+.flex-container {
+    /* for my navbar */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15vw;
+    border-bottom: 2px solid black;
+}
+
+.flex-container li {
+    list-style: none;
+    padding: 2px;
 }
