@@ -15,7 +15,7 @@
 
 <!-- https://html.com/html5/ documentation for HTML5 -->
 
-<body>
+<body class="container">
     <nav>
         <a href="index.html">Go to profile</a>
         <a href="projects.html">Go to projects</a>
@@ -26,16 +26,32 @@
         <h1>My Profile</h1>
         <h2>Talal</h2>
         <p>An <em>awesome</em> and <strong>amazing</strong> website demonstration!</p>
-        <img src="./images/Mung_Daal.png" alt="A picture of Mung Daal" width="200px">
+
+        <!-- TASK: Centering an image -->
+
+        <!-- using text align: center; in a block -->
+        <!-- <section style="text-align: center;">
+            <img src="./images/Mung_Daal.png" alt="A picture of Mung Daal" width="200px">
+        </section> -->
+
+        <!-- Using margins in CSS - width is overridden here -->
+        <!-- <img src="./images/Mung_Daal.png" alt="A picture of Mung Daal" class="center-margins" width="200px">  -->
+
+        <!-- using a flexbox to center image -->
+        <section class="flexbox-center-img">
+            <img src="./images/Mung_Daal.png" alt="A picture of Mung Daal" width="200px">
+        </section>
+        
+        <!-- <img src="./images/Mung_Daal.png" alt="A picture of Mung Daal" width="200px"> -->
     </header>
 
-    <section>
+    <section class="box-1">
         <h3>My Skills</h3>
         <p>Agile and Scrum Methodologies</p>
         <p>Cooking up some sweet code</p>
     </section>
 
-    <section>
+    <section class="box-2 floating-box">
         <h3>My Hobbies</h3>
         <ul>
             <li>French</li>
@@ -44,7 +60,7 @@
         </ul>
     </section>
 
-    <section>
+    <section class="box-1">
         <h3>My Goals</h3>
         <ol>
             <li>Become a great consultant</li>

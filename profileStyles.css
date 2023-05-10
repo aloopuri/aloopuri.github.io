@@ -1,0 +1,75 @@
+/* the html element selector means all if those elements */
+/* li {
+    color:dodgerblue;
+    font-size: 2rem;
+}
+
+p, h3 {
+    font-size: 1.2rem;
+    font-family: 'Comic Sans MS';
+} */
+
+/* id selector */
+
+#search {
+    background-color: blueviolet;
+    color: beige;
+    width: 50vw;
+}
+
+/* class selectors */
+
+.btn {
+    /* come back later */
+}
+
+/* wildcard selectors */
+* {
+    /* for everything  */
+    /* margin: 0px;
+    padding: 0px; */
+}
+
+body {
+    background-color: rgb(214, 251, 214);
+    color: rgb(4, 11, 104);
+
+    font-family: "Comic Sans MS", "Times New Roman", Impact, cursive;
+    font-size: 1rem;
+}
+
+h1 {
+    color: #ff0000;
+}
+
+.box-1 {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.box-2 {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    width: 80vw;
+    margin: auto;
+}
+
+.floating-box {
+    padding-left: 4vw;
+}
+
+/* using this to center an image overwrites the html which determines it's size unless you set it here.
+You also do not want to use this on all img attributes, but would reference it by its id or class, but this is
+just an example for any image on this html page */
+.center-margins {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.flexbox-center-img {
+    display: flex;
+    justify-content: center;
+}
