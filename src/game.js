@@ -8,6 +8,8 @@ const balloons = []
 
 let score = 0
 
+let popSfx;
+
 // balloons.push("A new balloon")
 // balloons.push(1)
 
@@ -31,6 +33,11 @@ let score = 0
 // testBalloon.move = function() {
 //     this.x += 10
 // }
+
+function preload() {
+    soundFormats("wav")
+    popSfx = loadSound("./pop")
+}   
 
 function greeting() {
     // let gameTitle = title + " - " + "by " + developer
