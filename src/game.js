@@ -2,7 +2,7 @@ var title = "My Balloon Game"
 // hoisting is the difference between let and var
 let developer = "Talal"
 
-const BALLOON_TOTAL = 10
+const BALLOON_TOTAL = 20
 
 const balloons = []
 
@@ -63,8 +63,8 @@ function youWin() {
     para.appendChild(textNode)
     para.setAttribute("id", "win-message")
 
-    document.getElementById("game-container").appendChild(para)
-    document.getElementById("game-canvas").style.display = "none"
+    // document.getElementById("game-container").appendChild(para)
+    document.getElementById("button-holder").appendChild(para)
 }
 
 function restartGame() {
@@ -75,7 +75,6 @@ function restartGame() {
     score = 0
     document.getElementById("score").innerHTML = score
     loop()
-    document.getElementById("game-canvas").style.display = "inline"
 
     balloons.splice(0, balloons.length)
     buildBalloons()
